@@ -1,7 +1,5 @@
 
 # Content Blocks
-[![Build Status](https://travis-ci.org/SomarDesignStudios/silverstripe-contentblocks.svg?branch=master)](https://travis-ci.org/SomarDesignStudios/silverstripe-contentblocks)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/SomarDesignStudios/silverstripe-contentblocks/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/SomarDesignStudios/silverstripe-contentblocks/?branch=master)
 
 Add Content Blocks with different Layouts to pages.
 
@@ -144,5 +142,6 @@ TO DO
 ## TO DO
 - Tests
 - Internationalization
+- Badges
 - A neater interface to add the different classes of Content Block
 - Remove dependency on Userforms module.
