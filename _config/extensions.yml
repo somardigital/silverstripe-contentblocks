@@ -1,0 +1,6 @@
+---
+Name: extensions
+---
+Page:
+  extensions:
+    - ContentBlockExtension
