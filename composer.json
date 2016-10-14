@@ -15,7 +15,6 @@
     "php": ">=5.4.0",
     "silverstripe/framework": "^3.2",
     "silverstripe/cms": "^3.2",
-    "silverstripe/userforms": "^4",
     "silverstripe-australia/gridfieldextensions": "^1.1",
     "unclecheese/display-logic": "^1",
     "sheadawson/silverstripe-linkable": "^1.3"

@@ -159,5 +159,4 @@ TO DO
 ## TO DO
 - Tests
 - Internationalization
-- A neater interface to add the different classes of Content Block
-- Remove dependency on Userforms module.
+- Shortcodes
