@@ -7,16 +7,6 @@ ContentBlock:
       ContentBlock_TileSection: 'Tile Section'
       ContentBlock_ColumnLayout: 'Column Layout'
       ContentBlock_Accordion: 'Accordion'
-ContentBlock_ColumnLayout:
-  column_classes:
-    - 'content-block__column'
-  row_classes:
-    - 'content-block__row'
-ContentBlock_Accordion:
-  accordion_classes:
-    - 'content-block__accordion'
 ContentBlock_TileSection:
-  tile_classes:
-    - 'content-block__tile'
   tile_templates:
     ContentTile_Basic: 'Default'
