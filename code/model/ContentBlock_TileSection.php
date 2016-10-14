@@ -4,7 +4,6 @@
  * Models a Content Block Tile Section
  *
  * @since 1.0.0
- * @package silverstripe-contentblocks
  */
 class ContentBlock_TileSection extends ContentBlock
 {

@@ -3,7 +3,6 @@
  * Models a Content Tile for a {@link ContentBlock_TileSection}
  *
  * @since 1.0.0
- * @package silverstripe-contentblocks
  */
 class TileSection_ContentTile extends DataObject
 {

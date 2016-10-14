@@ -4,7 +4,6 @@
  * Adds Content Block functionality to a page
  *
  * @since 1.0.0
- * @package contentblocks
  */
 class ContentBlockExtension extends DataExtension
 {
@@ -15,6 +14,7 @@ class ContentBlockExtension extends DataExtension
 
     public function updateCMSFields(FieldList $fields)
     {
+        $types = Config::inst()->get('ContentBlock', 'types');
         $fields->addFieldToTab(
 			'Root.ContentBlocks',
 			GridField::create(
@@ -23,23 +23,9 @@ class ContentBlockExtension extends DataExtension
 				$this->owner->getComponents('ContentBlocks'),
 				GridFieldConfig_RecordEditor::create()
 				->addComponent(new GridFieldOrderableRows('Sort'))
-				->addComponent(
-					GridFieldAddClassesButton::create('ContentBlock_CaseStudy')
-					->setButtonName('Add Case Study')
-				)
-				->addComponent(
-					GridFieldAddClassesButton::create('ContentBlock_TileSection')
-					->setButtonName('Add Tile Section')
-				)
-				->addComponent(
-					GridFieldAddClassesButton::create('ContentBlock_ColumnLayout')
-					->setButtonName('Add Column Layout')
-				)
-				->addComponent(
-					GridFieldAddClassesButton::create('ContentBlock_Accordion')
-					->setButtonName('Add Accordion')
-				)
-				->removeComponentsByType('GridFieldAddNewButton')
+                ->removeComponentsByType('GridFieldAddNewButton')
+                ->addComponent(GridFieldDropdownAddNewButton::create('ContentBlock', $types)
+                ->setButtonName('Add Content Block'))
 			)
 		);
     }

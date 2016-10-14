@@ -1,5 +1,7 @@
 
 # Content Blocks
+[![Build Status](https://travis-ci.org/SomarDesignStudios/silverstripe-contentblocks.svg?branch=master)](https://travis-ci.org/SomarDesignStudios/silverstripe-contentblocks)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/SomarDesignStudios/silverstripe-contentblocks/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/SomarDesignStudios/silverstripe-contentblocks/?branch=master)
 
 Add Content Blocks with different Layouts to pages.
 
@@ -32,6 +34,10 @@ This Content Block provides a landing-page type tile layout. Each Tile can have
 an image, title, caption and link. Tiles can be displayed in rows of two or three. There is
 also support for user selected templates.
 
+### GridFieldDropdownAddNewButton
+
+TO DO
+
 ### Case Study
 
 TO DO
@@ -61,7 +67,7 @@ feel of the content blocks apart from the Bootstrap bits ofcourse.
 
 ### Base Configuration
 
-#### Bootstrap
+#### include_bootstrap
 
 This module requires Twitter Bootstrap 3 for a number of layouts and components. It is recommended
 to include Bootstrap in your theme as you will better be able to manage cascading styles however,
@@ -72,6 +78,17 @@ __config.yml__
 ```
 ContentBlock:
   include_bootstrap: true
+
+```
+
+#### types
+
+Specify what types should be able to be created in the GridFieldDropdownAddNewButton.
+__config.yml__
+```
+ContentBlock:
+  types:
+    ClassName: 'Dropdown Label'
 
 ```
 
@@ -142,6 +159,5 @@ TO DO
 ## TO DO
 - Tests
 - Internationalization
-- Badges
 - A neater interface to add the different classes of Content Block
 - Remove dependency on Userforms module.

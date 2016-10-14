@@ -4,7 +4,6 @@
  * Models a Content Block Accordion
  *
  * @since 1.0.0
- * @package silverstripe-contentblocks
  */
 class ContentBlock_Accordion extends ContentBlock
 {

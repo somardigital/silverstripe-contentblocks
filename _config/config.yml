@@ -3,6 +3,10 @@ Name: contentblocks
 ---
 ContentBlock:
     include_bootstrap: false
+    types:
+      ContentBlock_TileSection: 'Tile Section'
+      ContentBlock_ColumnLayout: 'Column Layout'
+      ContentBlock_Accordion: 'Accordion'
 ContentBlock_ColumnLayout:
   column_classes:
     - 'content-block__column'

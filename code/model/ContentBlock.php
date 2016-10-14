@@ -4,7 +4,6 @@
  * Models a Content Block - a base class for different types of Content Blocks
  *
  * @since 1.0.0
- * @package silverstripe-contentblocks
  */
 class ContentBlock extends DataObject
 {
