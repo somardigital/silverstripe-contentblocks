@@ -1,5 +1,13 @@
 <section class="content-block">
-    <% if TilesPerRow == Two %>
+    <% if TilesPerRow == One %>
+        <% loop ContentTiles %>
+            <div class="row">
+                <div class="col-sm-12">
+                    $RenderTile
+                </div>
+            </div>
+        <% end_loop %>
+    <% else_if TilesPerRow == Two %>
         <% loop ContentTiles %>
             <% if Modulus(2) == 1 || First %>
                 <div class="row">

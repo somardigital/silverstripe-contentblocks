@@ -8,7 +8,7 @@
 class ContentBlock_TileSection extends ContentBlock
 {
     private static $db = [
-        'TilesPerRow' => 'Enum("Two, Three")',
+        'TilesPerRow' => 'Enum("One, Two, Three")',
         'TileTemplate' => 'Text'
     ];
 
