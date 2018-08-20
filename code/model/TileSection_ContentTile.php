@@ -90,4 +90,24 @@ class TileSection_ContentTile extends DataObject
 
         return (!empty($classesArray)) ? implode(' ', $classesArray) : '' ;
     }
+
+    public function canView($member = null)
+    {
+        return Permission::check('CMS_ACCESS_CMSMain', 'any', $member);
+    }
+
+    public function canEdit($member = null)
+    {
+        return Permission::check('CMS_ACCESS_CMSMain', 'any', $member);
+    }
+
+    public function canDelete($member = null)
+    {
+        return Permission::check('CMS_ACCESS_CMSMain', 'any', $member);
+    }
+
+    public function canCreate($member = null)
+    {
+        return Permission::check('CMS_ACCESS_CMSMain', 'any', $member);
+    }
 }
